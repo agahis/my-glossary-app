@@ -1,0 +1,6 @@
+@GlossaryWebApi_HostAddress = http://localhost:5197
+
+GET {{GlossaryWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

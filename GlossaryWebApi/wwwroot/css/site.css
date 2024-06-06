@@ -1,0 +1,150 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Header styles */
+h1 {
+    color: #007bff;
+    text-align: center; /* Center header text */
+}
+
+/* Form styles */
+input[type='text'], input[type='submit'], button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style the placeholder text */
+input[type='text']::placeholder {
+    color: #fff; /* White color for placeholder text */
+}
+
+/* Style input fields differently when they are empty */
+input[type='text']:empty {
+    background-color: #91c7ff; /* Lighter blue color */
+}
+
+input[type='text'] {
+    width: calc(100% - 70px); /* Adjust input width */
+}
+
+input[type='submit'], button {
+    width: 120px;
+}
+
+input[type='submit']:hover, button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; /* Add vertical border */
+}
+
+th:first-child,
+td:first-child {
+    border-left: 1px solid #ddd; /* Add vertical border */
+}
+
+th {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+}
+
+/* Search section styles */
+#searchSection {
+    margin-top: 20px;
+    text-align: center; /* Center search section */
+}
+
+/* Add Terms Section styles */
+#addSection {
+    display: none;
+    text-align: center; /* Center the content */
+    position: relative; /* Set position relative for absolute positioning */
+}
+
+/* Center-align the title in Add Terms Section */
+#addSection,
+#glossarySection,
+#editForm h3 {
+    text-align: center;
+}
+
+#editForm {
+    text-align: center;
+}
+
+#editForm form {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Search result styles */
+#search-result {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    background-color: #91c7ff; /* Light blue background */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#search-result button {
+    margin: 5px; /* Add some space between buttons */
+}
+
+#mainMenu {
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add some space below the header */
+}
+
+/* Button group to place buttons next to each other */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Adjust the button spacing */
+.button-group input[type='submit'],
+.button-group button {
+    margin: 5px;
+    width: auto; /* Allow the buttons to size automatically */
+}
+
+/* Add margin between the buttons */
+#addButton {
+    margin-right: 20px; /* Adjust the space between the buttons */
+}

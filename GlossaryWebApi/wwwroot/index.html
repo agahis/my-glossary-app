@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary App</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+
+<div class="container">
+    <!-- Main Menu -->
+    <div id="mainMenu">
+        <h1>Glossary App</h1>
+        <h3>Main Menu</h3>
+        <button onclick="showSection('addSection')">Add New Term</button>
+        <button onclick="showSection('searchSection')">Search For Term</button>
+        <button onclick="showSection('glossarySection')">View Glossary</button>
+    </div>
+
+    <!-- Add Terms Section -->
+    <div id="addSection" style="display:none;">
+        <h3>Please enter the term & definition you want to add:</h3>
+        <form id="addForm" action="javascript:void(0);" method="POST">
+            <input type="text" id="add-term" placeholder="New term">
+            <input type="text" id="add-definition" placeholder="Relevent definition">
+            <div class="button-group">
+                <button type="button" onclick="returnToMainMenu()" id="returnButton">Main Menu</button>
+                <input type="submit" value="Add" id="addButton">
+            </div>
+        </form>
+    </div>
+
+    <!-- Search Section -->
+    <div id="searchSection" style="display:none;">
+        <h3>Search for the term you want to find:</h3>
+        <form action="javascript:void(0);" method="GET" onsubmit="searchItem()">
+            <input type="text" id="search-term" placeholder="Enter term to search">
+            <div class="button-group">
+                <button onclick="returnToMainMenu()">Main Menu</button>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        
+        <!-- Add this div for displaying search results -->
+        <div id="search-result" style="display:none;"></div>
+    </div>
+
+    <!-- Edit Terms Section -->
+    <div id="editForm" style="display:none;">
+        <h3>Edit term and/or definition</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-term">
+            <input type="text" id="edit-definition">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <!-- Glossary Section -->
+    <div id="glossarySection" style="display:none;">
+        <h3>Full Glossary</h3>
+        <p id="counter"></p>
+        <table>
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="glossary"></tbody>
+        </table>
+        <button onclick="returnToMainMenu()">Return to Main Menu</button>
+    </div>
+</div>
+
+<script src="js/site.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    // Initially displays the main menu
+    showSection('mainMenu');
+</script>
+
+</body>
+</html>

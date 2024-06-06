@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\simon\\Desktop\\GlossaryApp\\GlossaryWebApi\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Desktop\\GlossaryApp\\GlossaryWebApi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\simon\\Desktop\\GlossaryApp\\GlossaryWebApi\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GlossaryWebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GlossaryWebApi.props",
+      "PackagePath": "build\\GlossaryWebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GlossaryWebApi.props",
+      "PackagePath": "buildMultiTargeting\\GlossaryWebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GlossaryWebApi.props",
+      "PackagePath": "buildTransitive\\GlossaryWebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
